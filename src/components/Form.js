@@ -4,7 +4,8 @@ class Form extends Component {
 	// state = {  }
 	render() { 
 		return (
-		<div className="Form">
+		<div className="">
+			<h2>Aquí debe ir el formulario</h2>
 		</div>
 		);
 	}

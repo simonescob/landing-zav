@@ -1,16 +1,17 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class Background extends Component {
-	// state = {  }
-	render() { 
-		return ( 
-		<div className="background">
+function Background(props){ 
+	return ( 
+	<div className="background">
 
-			{this.props.children}
+		<React.Fragment>
+			<div className="layer">
+				{props.children}
+			</div>
+		</React.Fragment>
 
-		</div>
-		);
-	}
+	</div>
+	);
 }
  
 export default Background;
