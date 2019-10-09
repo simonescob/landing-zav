@@ -3,12 +3,15 @@ import logo from './logo.svg';
 import './App.css';
 
 import Form from "./components/Form";
+import Background from './components/Background';
 
 function App() {
   return (
     <div className="App">
       
-      <Form/>
+      <Background>
+        <Form/>
+      </Background>
       
     </div>
   );
