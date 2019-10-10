@@ -1,0 +1,21 @@
+.carousel{
+  
+}
+
+.carousel img{
+  width: 440px;
+}
+
+.carousel #ImageTopText{
+  padding: 12px;
+  background-color: #58585886;
+  border-radius: 10px 10px 0 0;
+}
+
+.carousel #ImageBottomText{
+  font-size: 12px;
+  padding: 12px;
+  margin-top: -10px;
+  background-color: #5858584f;
+  border-radius: 0 0 10px 10px;
+}
