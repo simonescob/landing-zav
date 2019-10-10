@@ -1,7 +1,15 @@
+// importanto react
 import React, { Component } from 'react';
 
+// "axios" que funciona para traducir los json en react
 import axios from "axios";
 
+// Usando bootstrap para hacer el Carousel
+// import 'bootstrap/dist/css/bootstrap.min.css';
+
+import Slider from "./Slider";
+
+// La clase Carousel
 class Carousel extends Component {
 	state = {
 		elements: []
@@ -19,29 +27,20 @@ class Carousel extends Component {
 		})
 		.catch(console.log)
 
-		axios.get("http://localhost:4545/api/v1/text/")
-		.then((res)=>{
-			let result = [res.data]
-			console.log(result);
-		})
-		.catch(console.log)
-
 	}
 	
 	render() { 
 		return ( 
 		<div className="carousel">
-			{/* <p>
-			{this.state.elements.map((item, key) => {
-				return(
-					<div key={key}>
-						<div id="ImageTopText">{item.title}</div>
-						<img src={item.image} alt={item.link.title}/>
-						<div id="ImageBottomText">{item.link.title}</div>
+
+			<div>
+				{this.state.elements.map((items, key) => <div>
+						<Slider
+							Items={items}
+						/>
 					</div>
-				)
-			})}
-			</p> */}
+				)}
+			</div>
 
 		</div>
 		);

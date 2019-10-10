@@ -26,26 +26,26 @@ app.use(bodyparser.urlencoded({ extended: false }));
 let images = [
 	{
 		image: "https://i.imgur.com/8KB1b9C.png",
-		title: "Este puede ser si sonrisa",
+		title: "Mira la sonrisa que puedes tener",
 		link: {
 			url: "https://i.imgur.com/8KB1b9C.png",
-			title: "información de la imagen"
+			title: "información de la imagen 1"
 		}
 	},
 	{
-		image: "https://i.imgur.com/wyoqw17.jpg",
-		title: "Mira esta sonrisa",
+		image: "https://i.imgur.com/oDNXLPl.jpg",
+		title: "Esta podría ser tu sonria",
 		link: {
-			url: "https://i.imgur.com/wyoqw17.jpg",
-			title: "información sobre esta foto"
+			url: "https://i.imgur.com/oDNXLPl.jpg",
+			title: "información de la imagen 2 "
 		}
 	},
 	{
-		image: "https://i.imgur.com/eZuBkaS.jpg",
-		title: "Mira lo bueno que piedes quedar",
+		image: "https://i.imgur.com/oeiBrTK.jpg",
+		title: "Esto se ve muy bueno",
 		link: {
-			url: "https://i.imgur.com/eZuBkaS.jpg",
-			title: "información de la imagen"
+			url: "https://i.imgur.com/oeiBrTK.jpg",
+			title: "información de la imagen 3"
 		}
 	},
 ];
