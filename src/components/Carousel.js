@@ -42,6 +42,10 @@ class Carousel extends Component {
 				)}
 			</div>
 
+			<div className="ImagesBottom">
+				<img src={"../img/Enmascarar grupo 7.png"} alt=""/>
+			</div>
+
 		</div>
 		);
 	}
