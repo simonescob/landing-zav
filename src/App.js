@@ -8,10 +8,16 @@ import Head from './components/Head';
 import Footer from './components/Footer';
 import Content from './components/Content';
 
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+
 function App() {
   return (
     <div className="App">
-      
       <Head/>
 
       <Background>

@@ -2,8 +2,16 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
+import { createHashHistory } from 'history';
+
+
+import {Redirect} from 'react-router-dom';
+
 // ruta para mandar la informacion del formulario y guardarla en la base de datos
 const API_PATH = "http://localhost/lading-zav/action.php";
+
+export const history = createHashHistory()
+
 
 // clase Form
 class Form extends Component {
@@ -14,6 +22,7 @@ class Form extends Component {
 		email: '',
 		number: '',
 	}
+
 
 	// Este evento cambia el estado inicial por el valor de los campos del formulario
 	handleInputChange = (event) => {
@@ -38,7 +47,8 @@ class Form extends Component {
 			data: this.state
 		})
 			.then(result => {
-				console.log("listo!")
+				console.log("listo!");
+				history.push('thanks')
 			})
 			.catch(error => this.setState({ error: error.message }));
 
@@ -57,7 +67,6 @@ class Form extends Component {
 				<div className="anuncio">diarios</div>
 				<div className="">*Aplican <a href="#">Términos y Condiciones</a></div>
 			</div>
-
 
 			{/* Formulario */}
 			<form onSubmit={this.handleSubmit}>
@@ -93,7 +102,7 @@ class Form extends Component {
 			</label>
 
 			<div className="btnlayer">
-				<input type="submit" className="btnSend" value="Solicitar"/>
+				<input type="submit" className="btnSend" value="Solicitar" />
 			</div>
 			
 			</form>

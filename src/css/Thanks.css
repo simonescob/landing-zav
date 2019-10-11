@@ -1,0 +1,61 @@
+.ThanksBackground{
+	/* border: solid black; */
+
+	width: 100vw;
+	height: 89.4vh;
+	background-color: #2A577A;
+
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
+	padding-left: 10%;
+	overflow: hidden;
+}
+
+.text{
+	width: 500px;
+	/* border: solid black; */
+	font-weight: bold;
+}
+
+.ThanksBackground .btnlayer{
+	background: transparent linear-gradient(180deg, #FF6319 0%, #E35410 100%) 0% 0% no-repeat padding-box;
+	box-shadow: 3px 3px 3px #00000062;
+	border-radius: 55px;
+	opacity: 1;
+
+	width: 200px;
+	height: 50px;
+	text-align: center;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+}
+
+.ThanksBackground .btnlayer a{
+	/* border: solid; */
+	/* padding-bottom: 25px; */
+	text-align: center;
+	/* margin-top: 100px; */
+	color: white;
+	text-decoration: none;
+}
+
+.person{
+	margin-top: 200px;
+	margin-left: 200px;
+	/* border: solid; */
+	height: 70%;
+	transform: scale(2);
+	overflow: hidden;
+}
+
+.ImageBack{
+	/* border: solid black; */
+	width: 53%;
+	height:100%;
+	background: transparent url('../img/Trazado compuesto.svg') 0% 0% no-repeat padding-box;
+}
