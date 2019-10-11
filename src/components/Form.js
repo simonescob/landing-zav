@@ -1,15 +1,21 @@
+// importantdo reactjs
 import React, { Component } from 'react';
 import axios from 'axios';
 
+// ruta para mandar la informacion del formulario y guardarla en la base de datos
 const API_PATH = "http://localhost/lading-zav/action.php";
 
+// clase Form
 class Form extends Component {
+	
+	// estados
 	state = {
 		name: '',
 		email: '',
 		number: '',
 	}
 
+	// Este evento cambia el estado inicial por el valor de los campos del formulario
 	handleInputChange = (event) => {
     const target = event.target;
     const value = target.type === 'checkbox' ? target.checked : target.value;
@@ -20,6 +26,7 @@ class Form extends Component {
     });
 	}
 	
+	// Este evento envia los valores del formilario al backend
 	handleSubmit = (e) => {
 		e.preventDefault();
 		console.log(this.state);
@@ -31,10 +38,7 @@ class Form extends Component {
 			data: this.state
 		})
 			.then(result => {
-				alert("listoooo")
-				// this.setState({
-				// 	mailSent: result.data.sent
-				// })
+				console.log("listo!")
 			})
 			.catch(error => this.setState({ error: error.message }));
 
@@ -43,6 +47,8 @@ class Form extends Component {
 	render() { 
 		return (
 		<div className="form">
+
+			{/* Parte superior */}
 			<div className="layeranun">
 				<div className="anuncio">Implantes Dentales</div>
 				<div>desde</div>
@@ -52,10 +58,10 @@ class Form extends Component {
 				<div className="">*Aplican <a href="#">Términos y Condiciones</a></div>
 			</div>
 
-			<form onSubmit={this.handleSubmit}>
-			
-			<div id="TextInForm">Solicita tu COTIZACIÓN GRATIS!</div>
 
+			{/* Formulario */}
+			<form onSubmit={this.handleSubmit}>
+			<div id="TextInForm">Solicita tu <br/> COTIZACIÓN GRATIS!</div>
 			<p id="TextInFormHelp">Campos obligatorios:<span>*</span></p>
 
 			<label>Nombre completo:<span>*</span></label>
@@ -63,7 +69,6 @@ class Form extends Component {
 			placeholder="Tu nombre" 
 			required minLength="8" 
 			onChange={this.handleInputChange}/>
-
 
 			<label>Correo:<span>*</span></label>
 			<input type="email" 

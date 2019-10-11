@@ -1,3 +1,10 @@
+/* Importando la fuete para usarla en todo el proyecto */
+@import "form.css";
+@import "carousel.css";
+@import "fonts.css";
+@import "Content.css";
+
+/* Esilos globales */
 *{
   font-family: "Hurme Geometric Sans No.4";
 }
@@ -8,11 +15,7 @@ body, html {
   color: white !important;
 }
 
-/* Importando la fuete para usarla en todo el proyecto */
-@import "form.css";
-@import "carousel.css";
-@import "fonts.css";
-@import "Content.css";
+/* algunos elementos */
 
 a{
   color: #4BACD5;
@@ -21,45 +24,28 @@ a{
 /* Head */
 
 .head{
-  margin-left: 260px;
+  margin-left: 230px;
+  margin-bottom: 15px;
 }
 
 /* Head */
 
 /* Background */
+
 .background {
-  top: 0px;
-  left: 0px;
   width: 98.93vw;
   background: transparent url('../img/Grupo 285.svg') 0% 0% no-repeat padding-box;
   opacity: 1;
 }
 
 .layer{
-  padding: 70px 150px;
-
+  padding: 50px 150px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  /* align-items: space-around; */
 }
 
-<<<<<<< HEAD
-/* Background */
-
-.content{
-
-  color: black !important;
-
-  width: 98.93vw;
-  height: 90vh;
-
-  background: transparent url('../img/Trazado compuesto.svg') 0% 0% no-repeat padding-box;
-  /* opacity: 0.13; */
-}
-=======
->>>>>>> Content
-
+/* Footer */
 .footer{
   max-width: 100%;
   height: 50px;
