@@ -1,0 +1,52 @@
+.content{
+  color: black !important;
+	width: 98.93vw;
+}
+
+.content{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.content-img{
+	margin-left: 136vh;
+	margin-top: -200px;
+	width: 400px;
+}
+
+.ContentBox{
+	margin-top: -150px;
+	margin-left: 140px;
+	padding-bottom: 160px;
+	width: 50vw !important;
+}
+
+.ContentTitle{
+	margin-left: 20px;
+	width: 46vw !important;
+	color: #002395;
+}
+
+ul{
+	list-style: none !important;
+	padding: 0px;
+	margin-left: 10px;
+}
+
+ul li::before {
+	content: "\26AA";  
+	color: transparent; 
+	display: inline-block; 
+	background: transparent url('../img/Símbolo 9 – 14.svg') 0% 0% no-repeat padding-box;
+	padding-right: 10px;
+	font-size: 50px;
+	line-height: 25px;
+	vertical-align: -11px;
+	width: 15px;
+}
+
+
+.ContentBox .icon-check{
+	background: transparent url('../img/Símbolo 9 – 14.svg') 0% 0% no-repeat padding-box;
+}

@@ -1,19 +1,18 @@
-/* Importando la fuete para usarla en todo el proyecto */
-@import "carousel.css";
-@import "form.css";
-@import "fonts.css";
-
 *{
   font-family: "Hurme Geometric Sans No.4";
 }
-
-/* Estilos globales */
 
 body, html {
   padding: 0;
   margin: 0;
   color: white !important;
 }
+
+/* Importando la fuete para usarla en todo el proyecto */
+@import "form.css";
+@import "carousel.css";
+@import "fonts.css";
+@import "Content.css";
 
 a{
   color: #4BACD5;
@@ -45,6 +44,7 @@ a{
   /* align-items: space-around; */
 }
 
+<<<<<<< HEAD
 /* Background */
 
 .content{
@@ -57,6 +57,8 @@ a{
   background: transparent url('../img/Trazado compuesto.svg') 0% 0% no-repeat padding-box;
   /* opacity: 0.13; */
 }
+=======
+>>>>>>> Content
 
 .footer{
   max-width: 100%;
