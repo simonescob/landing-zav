@@ -1,0 +1,15 @@
+.footer{
+	width: 100%;
+	height: 60px;
+	background-color: #002395 !important;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.otherText{
+	display: flex;
+	flex-direction: row;
+}
