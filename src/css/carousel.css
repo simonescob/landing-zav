@@ -1,0 +1,19 @@
+.carousel{
+  color: white !important;  
+}
+
+.carousel .slide{
+  width: 540px;
+}
+
+.carousel #ImageTopText{
+  padding: 8px 15px;
+  background-color: #ffffff3f;
+  border-radius: 12px 12px 0 0 ;
+}
+
+.carousel #ImageBottomText{
+  padding: 8px 15px;
+  background-color: #ffffff3f;
+  border-radius: 0 0 12px 12px;
+}
