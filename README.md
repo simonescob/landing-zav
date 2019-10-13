@@ -10,11 +10,10 @@ Creado por Simón Escobar.
 
 Para usar esta landing tienes que tener instalado:
 
-Yarn o Npm => para manejar los paquetes
-Xampp  => para usar un formulario que almacena información
-Node o Nodemon => para enceder el servidor de la **API**
-Composer => el formulario necesita mandar un correo y para eso utilizo **PHPMailer** 
-
+- Yarn o Npm => para manejar los paquetes
+- Xampp  => para usar un formulario que almacena información
+- Node o Nodemon => para enceder el servidor de la **API**
+- Composer => el formulario necesita mandar un correo y para eso utilizo **PHPMailer** 
 
 <hr/>
 
