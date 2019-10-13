@@ -6,7 +6,7 @@ Creado por Simón Escobar.
 
 <hr/>
 
-## Prerequisitos
+## Prerrequisitos
 
 Para usar esta landing tienes que tener instalado:
 
